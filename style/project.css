@@ -102,7 +102,6 @@ button:active{
 .carousel-images video {
     width: 100%; 
     height: auto; 
-    pointer-events: none;
 }
 .indicator {
     display: inline-block;
