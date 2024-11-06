@@ -1,0 +1,132 @@
+.skills-container-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills-container-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    padding-bottom: 5%;
+    width: 100%;
+    background-color: bisque;
+}
+.skills-container-1 h1{
+    font-weight: 400;
+    font-size: 10vh;
+}
+.skills-container-2 h1{
+    font-weight: 500;
+    font-size: 10vh;
+    padding-top: 5vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.skills-container-2 h2{
+    font-weight: 500;
+    font-size: 23px;
+    padding-top: 5vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.skills-container-2 p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    padding-top: 5px;
+    text-align: left;
+    word-spacing: 2px;
+    line-height: 1.6;
+}
+
+
+.tag-row{
+    margin-bottom: 0.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tag{
+    display: flex; 
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    background-color: aqua;
+    padding: 10px 30px; 
+    border-radius: 30px;
+    margin: 0.5% 1.5%; 
+}
+.tag i{
+    display: flex;
+    align-items: end;
+    margin-right: 5px;
+}
+.tag img{
+    width: 25px;
+    margin-right: 10%;
+}
+.skills-box-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skill-box{
+    width: 200px;
+    height: 220px;
+    border: 2px ;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 3%;
+    background-color: rgb(250, 215, 171);
+}
+.skill-box img{
+    width: 10%;
+}
+@media (max-width: 800px){
+    .tag-row{
+        flex-wrap: wrap;
+        margin-left: 5%;
+    }
+}
+@media (max-width: 593px) {
+    .skills-container-1{
+        align-items: flex-start;
+        padding: 0 5%;
+    }
+    .skills-container-1 h1{
+        justify-content: left;
+        
+    }
+    .skills-container-2 h1{
+        font-size: 8vh;
+    }
+    .tag-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .tag-row{
+        display: flex;
+        margin-bottom: 0;
+        margin-left: 0;
+        justify-content: left;
+    }
+    .tag{
+        margin:0.5% 1% ;
+    }
+    
+}
+@media (max-width: 400px) {
+    .tag{
+        font-size: 12px;
+        padding: 10px 20px; 
+    }
+    .tag img{
+        width: 12px;
+    };
+}

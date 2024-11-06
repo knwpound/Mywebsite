@@ -1,0 +1,18 @@
+.underconstructed{
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center; 
+    flex-direction: column;
+    margin-top: 20vh;
+}
+.underconstructed p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-top: 10px;      /* Space between image and text */
+    font-size: 1.2em;      /* Adjust font size as needed */
+    color: black;           /* Text color */
+}
+.underconstructed img{
+    width: 30vw;
+    max-width: 200px;
+}

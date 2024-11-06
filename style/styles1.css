@@ -1,0 +1,76 @@
+.main-content {
+    flex: 1; 
+}
+.greeting-container {
+    margin: 0;
+    display: flex; /* Use flexbox for alignment */
+    align-items: flex-start;
+    width: 100%; /* Full width for the container */
+}
+
+.greeting{
+    margin-left: 10%;
+    margin-top: 20vh;
+}
+.Hello{
+    font-style: italic;
+    font-weight: 600;
+    width: 50%;
+    font-size: 12vw;
+    margin: 0;
+}
+.introducing{
+    width: 100%;
+    font-size: 1.5vw;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify; 
+    line-height: 1.8; /* Adjust line height for spacing between lines */
+    letter-spacing: 0.5px;
+}
+img {
+    width: 50%; /* Set width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+.all-contact{
+    margin-top: 13vh;
+}
+.Contact{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 6vh;
+    font-size: 1.5vw;
+}
+.Contact-text{
+    margin: 0 0 0 20px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+}
+@media screen and (max-width: 1000px) {
+    .greeting{
+        margin-top: 10vh;
+    }
+    .introducing{
+        width: 75%;
+        font-size: medium;
+        letter-spacing: 0px;
+        text-align: start;
+
+    }
+    img {
+        display: none; /* Hide the image on screens smaller than 1000px */
+    }
+    .all-contact{
+        margin-top: 5vh;
+    }
+    .Contact{
+        font-size: medium;
+        margin-bottom: 4vh;
+    }
+    .Contact-text{
+        font-size: medium;
+    }
+    
+}

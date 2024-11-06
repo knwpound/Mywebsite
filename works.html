@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Works Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style\reuse_styles.css">
+        <link rel="stylesheet" href="style\project.css">
+
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="interest.html">Interest</a>
+      <a href="works.html">Works</a>
+      <a href="skills.html">Skills</a>
+      <a href="home.html">Home</a>
+      <div class="Logo">
+              
+          <div class="folder" onclick="toggleFolder(this, 'main.html')">
+              <div class="folder_back">
+                  <div class="folder_back_tiny"></div>
+                  <div class="folder_front right"></div>
+              </div>
+          </div>
+          <p id="Pound">Kanokwan</p>
+      </div>
+    </div>
+    <div class="project">
+      <div class="project-description">
+      <h1>MOO DAY</h1>
+      <h2>JAVA BASED GAME PROJECT</h2>
+      <p>   This was my very first project ! Moo Day is a
+         lively farming game built with Java and JavaFX, under the OOP concept. In this game,
+         players can grow various crops, raise animals, and even sell their produce for profit. I took the lead on
+         planning and developing from start to finish. It was an amazing experience watching Moo Day grow from just an idea to a fully playable game!</p>
+      </div>
+      <div class="youtube">
+        
+          <iframe src="https://www.youtube.com/embed/s6bN0dfBuLM?si=7KKrdctIcShZNlIo" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+      </div>
+    </div>
+    <div class="project" id="Box-Bone">
+      <div class="youtube">
+        <div class="carousel">
+        <div class="carousel-images">
+            <img src="resources/5.png" alt="Image 1">
+            <img src="resources/6.png" alt="Image 2">
+            <img src="resources/7.png" alt="Image 3">
+            <video autoplay loop muted controls>
+              <source src="resources/Box&Bone.mp4" type="video/mp4">
+          </video>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="carousel-indicators">
+          <span class="indicator" onclick="showSlide(0)"></span>
+          <span class="indicator" onclick="showSlide(1)"></span>
+          <span class="indicator" onclick="showSlide(2)"></span>
+          <span class="indicator" onclick="showSlide(3)"></span>
+        </div>
+        </div>
+
+      </div>
+      
+      <div class="project-description">
+      <h1 id="Box-Bone-header">Box & Bone</h1>
+      <h2>Real-Time Web Application Game</h2>
+      <p> Box & Bone is a fun game similar to Pac-Man, 
+        where players race to collect as many coins as possible 
+        within a set time limit! 
+        The player with the highest score will have their name displayed on the scoreboard.
+         This game features real-time score updates, using MongoDB to store each player's scores.
+          I have taken on the roles of task manager and full-stack developer for this exciting project!</p>
+      </div>
+      
+    </div>
+    <div class="water-container">
+      <div class="video-container">
+        <video autoplay loop muted controls>
+          <source src="resources\Smart Flood Gate.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="water-description">
+      <a href="https://smart-floodgate.web.app/">Water Sensor</a>
+      <h2>Water Level Measurement Project</h2>
+      <p>This project is about a water level sensor used in a dam. I designed the entire website's UI/UX. To make it feel more realistic, I added animated water waves, and the container can be scaled to match real-life sizes. The water level changes based on sensor data, and there are alerts to warn when the level is too high. It was a fun experience to create these interactive features!</p>
+      </div>
+      <div class="web-share">
+          <iframe src="https://smart-floodgate.web.app/" style="border: none;"></iframe>
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
